@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans Thai", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left {
+  flex: 60%;
+  background-color: white;
+  
+}
+
+.right {
+  flex: 40%;
+  background-color: #598bcd;
+  justify-content: space-between;
+}
+.resulttext {
+  background-color: white ;
+  padding: 20px 20px;
+  top: 0;
+  position: absolute  ;
+  margin-top: 25px;
+  border-radius: 80px;
+  color: #598bcd;
+}
+.explaination {
+  color: white;
+  width: 400px;
+  font-size: 30px;    
+  margin-top: 200px;
+}
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1920px) {
+  .resulttext {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .explaination {
+    font-size: 40px;
+    width: 600px;
+    margin-top: 250px;
+  }
+}
+
+/* Responsive for medium screens */
+@media (min-width: 1368px) and (max-width: 1910px) {
+  .resulttext {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .explaination {
+    font-size:  30px;
+    width: 400px;
+    margin-top: 250px;
+  }
+}
+
+/* Responsive for smaller screens */
+@media (min-width: 1270px) and (max-width: 1366px) {
+  .resulttext {
+    margin-top: 60px;
+  }
+  .explaination {
+    font-size:  30px;
+    width: 400px;
+    margin-top: 250px;
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 1000px) {
+  .resulttext {
+    margin-top: 60px;
+  }
+  .explaination {
+    font-size:  30px;
+    width: 400px;
+    margin-top: 250px;
+  }
+}
+
+/* For even smaller mobile screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack left and right in a column */
+  }
+
+  .left {
+    flex: none;
+    width: 100%; /* Make the left side full width */
+    order: 1; /* Make the left section appear below */
+    height: 0%
+  }
+
+  .right {
+    flex: none;
+    width: 100%; /* Make the right side full width */
+    order: 2; /* Make the right section appear above */
+    height: 100vh
+  }
+
+  /* Ensure the image also adjusts to the column layout */
+  .image {
+    position: relative;
+    width: 0%;
+    height: 0%; /* Adjust the image size as per the layout */
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+  }
+  .resulttext{
+    margin-top: 80px;
+    font-size: 13px;
+    margin-right: 25px;
+  }
+  .explaination{
+    margin-top: 200px;
+    font-size: 30px;
+    width: 350px;
+  }
+  } 
