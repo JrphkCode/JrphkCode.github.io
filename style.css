@@ -98,18 +98,6 @@ body {
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1366px) {
-  .image img {
-    height: 80%;
-    width: 100%;
-    margin-top: 80px;
-    margin-left: 10px;
-  }
-  .left h1{
-    top: 0;
-  }
-}
-
 
 @media (max-width: 1260px) {
   .container {
@@ -149,14 +137,25 @@ body {
 
 @media (min-width: 830px) and (max-width: 1280px) {
   .left h1{
-    font-size: 70px;
-    margin-top: -800px;
+    font-size: 50px;
+    margin-top: -400px;
   }
   .left p{
-    font-size: 30px;
+    font-size: 20px;
   }
   .left a{
-    font-size: 40px;
+    font-size: 20px;
+  }
+  
+  .image {
+    margin-left: 300px;
+  }
+  .image img {
+    width: 100%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 0px;
   }
 }
 @media (max-width: 678px) {
