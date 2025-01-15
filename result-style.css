@@ -101,7 +101,24 @@ body {
     margin-top: 250px;
   }
 }
-
+@media (max-width: 1024px)
+{
+  .resulttext{
+    font-size: 15px;
+  }
+  .explaination {
+    font-size:  25px;
+    width: 300px;
+    margin-top: 200px;
+  }
+  .image img {
+    height: 600px;
+    width: 1000px;
+    margin-left: 40px;
+    margin-top: 50px;
+    object-fit: cover;
+  }
+}
 /* Mobile responsive styles */
 @media (max-width: 1000px) {
   .resulttext {
