@@ -312,7 +312,15 @@ button:hover {
     margin-top: 9%;
   } 
 }
-
+@media (max-width: 1024px)
+{
+  .chain1 {
+    width: 0%;
+  } 
+  .chain2 {
+    width: 0%;
+  } 
+}
 /* Mobile responsive styles */
 @media (max-width: 1000px) {
   .question-text h1 {
